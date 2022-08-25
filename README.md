@@ -49,11 +49,17 @@ Here are some of the links you should look out for to make navigation on the sit
 These are the duties that are shared for the participants for this project. If you are paired with someone else please reach out to them to work on the project and complete before the deadline.
 
 The Navigation- Chizoba 
+
 The Homepage - Falomo Sharon & Sharon Yakubu
+
 About Page - Ifeoma Okafor & Elizabeth Okosun 
+
 Condition Page - Juliet Nnaji & Hikmot Okunola 
+
 Service Page - Jessica Joseph & Juliet Ofoegbu
+
 Contact Page - Valentina Buoro
+
 Footer - Nancy Olatunji
 
 
