@@ -44,7 +44,7 @@ Here are some of the links you should look out for to make navigation on the sit
 - Contact
 
 <!-- DUTIES OF PARTICIPANTS -->
-##Duties of Participants 
+## Duties of Participants 
 
 These are the duties that are shared for the participants for this project. If you are paired with someone else please reach out to them to work on the project and complete before the deadline.
 
