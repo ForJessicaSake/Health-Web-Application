@@ -13,7 +13,7 @@ function UseFetch(url) {
                 if (!response) {
                     throw new Error('could not reach resources')
                 } else {
-                    return response.json
+                    return response.json()
                 }
             })
             .then((data) => {
