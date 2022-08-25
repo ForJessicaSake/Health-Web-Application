@@ -64,7 +64,7 @@ These are the duties that are shared for the participants for this project. If y
 
 ## Note !!
 
-- Please endevour to make a *git pull* everyday before you work just incase anyone's code has not been merged
+- Please endevour to make a *git pull* everyday before you work just incase anyone's code has been merged
 - create a branch and push to your branch
 
 
