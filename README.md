@@ -60,7 +60,7 @@ These are the duties that are shared for the participants for this project. If y
 
 - Contact Page - Valentina Buoro
 
-- Footer - Nancy Olatunji
+- Footer - Nancy Olatuja
 
 ## Note !!
 
