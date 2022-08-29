@@ -1,4 +1,4 @@
-import firebase from './firebase';
+// import firebase from './firebase';
 
 import { createContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
