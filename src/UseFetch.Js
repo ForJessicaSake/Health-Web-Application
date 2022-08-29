@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useReducer } from "react";
 
 function UseFetch(url) {
     const [error, setError] = useState(null);
