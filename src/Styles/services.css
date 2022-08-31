@@ -1,0 +1,14 @@
+.database {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+}
+
+.database img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.database p {
+    width: 50%;
+}

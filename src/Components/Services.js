@@ -3,19 +3,20 @@ import UseFetch from './UseFetch';
 
 function Services() {
     //Importing the data from useFetch(the custom hook)
-    const { data, isPending } = UseFetch("Services")
+    const { data, isPending } = UseFetch("Conditions")
     return (
         <section>
-            <h1> This is the Home section</h1>
-            {/* this is how to map through the data from the collection home */}
-            {/* 
-         {isPending && <h5>...Loading</h5>}
-            {data.map((article) => (
-                <div className="preview" key={article.id}>
-                    <p>{article.title}</p>
-                    <p>{article.content}</p>
-                </div>
-            ))} */}
+            <article className='database'>
+                {isPending && <h5>...Loading</h5>}
+                {data.map((article) => (
+                    <div className="preview" key={article.id}>
+                        <img src={article.image} alt='eye' />
+                        <p>{article.title}</p>
+                        <p>{article.content}</p>
+                    </div>
+                ))}
+            </article>
+        
         </section>
     )
 }
