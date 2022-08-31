@@ -12,3 +12,83 @@
 .database p {
     width: 50%;
 }
+
+
+/* Services bottom section */
+.personal-service{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding: 3.5rem 1.25rem 3.5rem 1.25rem;
+}
+.services-img-cont {
+    margin-bottom: 2.5rem;
+    width: 80%;
+}
+.services-bottom-image{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 9999px;
+}
+
+.explore-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.explore-content h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.explore {
+    display: flex;
+    justify-content: center;
+}
+
+.explore-btn {
+    display: inline-flex;
+    font-size: 1.125rem;
+    border-width: 0px;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+@media (min-width: 1024px) {  
+   .explore-content{
+      padding-left: 1rem;
+      flex-grow: 1;
+   } 
+   .services-img-cont {
+      width: 100%;
+      max-width: 32rem;
+   }
+}
+
+@media (min-width: 768px) { 
+  .personal-service {
+    flex-direction: row;
+  }
+
+  .services-img-cont {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .explore-content {
+    padding-left: 4rem;
+    align-items:flex-start;
+    text-align: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 640px) { 
+    .explore-content h2 {
+        font-size: 1.875rem
+    }
+}
