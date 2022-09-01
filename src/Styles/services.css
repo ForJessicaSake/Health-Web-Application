@@ -10,7 +10,7 @@
     place-content: center;
     column-gap: 5%;
     align-items: center;
-    margin: 3% 5%;
+    margin: 3% 8%;
     text-align: justify;
     padding: 2% 3%;
     line-height: 1.7;
@@ -18,26 +18,42 @@
 }
 
 .preview {
-    padding: 5% 5%;
+    padding: 1.1% 1% 5% 1%;
+    border: 0.1px solid #ccebf5;
+    border-radius: 8%;
+    width: 98%;
 }
 
 .database img {
     width: 100%;
     object-fit: cover;
     height: 220px;
-    border-radius: 5%;
-    margin-top: 3%;
+    border-radius: 8%;
 }
 
 .database h3 {
-    width: 100%;
     margin-top: 2%;
+    margin: 2% 4%;
 }
 
 .database p {
-    width: 100%;
-    margin-top: 3%;
-    height: 250px;
+    width: 90%;
+    height: 230px;
+    margin: 2% 4%;
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 4%;
+    align-items: center;
+}
+
+.btn {
+    width: 10rem;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: white;
 }
 
 

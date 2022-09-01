@@ -20,16 +20,20 @@ function Services() {
         </div>
       </div>
 
-        <article className="database">
-          {isPending && <h5>...Loading</h5>}
-          {data.map((article) => (
-            <div className="preview" key={article.id}>
-              <img src={article.image} alt="eye" />
-              <h3>{article.title}</h3>
-              <p>{article.content}</p>
-            </div>
-          ))}
-        </article>
+      <section className="database">
+        {isPending && <h5>...Loading</h5>}
+        {data.map((article) => (
+          <article className="preview" key={article.id}>
+            <img src={article.image} alt="eye" />
+            <h3>{article.title}</h3>
+            <p>{article.content}</p>
+            <section className="book">               
+              <button className="btn">Book a Consultation</button>
+              <h5>More details</h5>
+            </section>
+          </article>
+        ))}
+      </section>
 
       {/* Services bottom section */}
       <aside className="personal-service">
