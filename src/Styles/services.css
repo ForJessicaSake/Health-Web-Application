@@ -1,21 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .database {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-content: center;
+    column-gap: 5%;
+    align-items: center;
+    margin: 3% 5%;
+    text-align: justify;
+    padding: 2% 3%;
+    line-height: 1.7;
+    row-gap: 1%;
+}
+
+.preview {
+    padding: 5% 5%;
 }
 
 .database img {
-    width: 50%;
+    width: 100%;
     object-fit: cover;
+    height: 220px;
+    border-radius: 5%;
+    margin-top: 3%;
+}
+
+.database h3 {
+    width: 100%;
+    margin-top: 2%;
 }
 
 .database p {
-    width: 50%;
+    width: 100%;
+    margin-top: 3%;
+    height: 250px;
 }
 
 
 /* Services bottom section */
-.personal-service{
+
+.personal-service {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -23,11 +51,13 @@
     color: black;
     padding: 3.5rem 1.25rem 3.5rem 1.25rem;
 }
+
 .services-img-cont {
     margin-bottom: 2.5rem;
     width: 80%;
 }
-.services-bottom-image{
+
+.services-bottom-image {
     object-fit: cover;
     object-position: center;
     border-radius: 9999px;
@@ -58,36 +88,35 @@
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 0.5rem;
 }
-@media (min-width: 1024px) {  
-   .explore-content{
-      padding-left: 1rem;
-      flex-grow: 1;
-   } 
-   .services-img-cont {
-      width: 100%;
-      max-width: 32rem;
-   }
+
+@media (min-width: 1024px) {
+    .explore-content {
+        padding-left: 1rem;
+        flex-grow: 1;
+    }
+    .services-img-cont {
+        width: 100%;
+        max-width: 32rem;
+    }
 }
 
-@media (min-width: 768px) { 
-  .personal-service {
-    flex-direction: row;
-  }
-
-  .services-img-cont {
-    margin-bottom: 0;
-    width: 50%;
-  }
-
-  .explore-content {
-    padding-left: 4rem;
-    align-items:flex-start;
-    text-align: left;
-    width: 50%;
-  }
+@media (min-width: 768px) {
+    .personal-service {
+        flex-direction: row;
+    }
+    .services-img-cont {
+        margin-bottom: 0;
+        width: 50%;
+    }
+    .explore-content {
+        padding-left: 4rem;
+        align-items: flex-start;
+        text-align: left;
+        width: 50%;
+    }
 }
 
-@media (min-width: 640px) { 
+@media (min-width: 640px) {
     .explore-content h2 {
         font-size: 1.875rem
     }
