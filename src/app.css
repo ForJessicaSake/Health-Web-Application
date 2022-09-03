@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: #333540;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cairo:wght@200&family=Catamaran:wght@100;200;300;400&family=Inconsolata:wght@300&family=Kaushan+Script&family=M+PLUS+1+Code:wght@200&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Mukta:wght@200&family=Mulish:wght@300&family=Noto+Sans:ital,wght@0,100;0,300;0,400;1,100;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Quicksand&family=Quintessential&family=Raleway:wght@200&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Secular+One&family=Source+Sans+Pro&family=Space+Mono:wght@400;700&family=Stint+Ultra+Condensed&display=swap');

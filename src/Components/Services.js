@@ -1,5 +1,7 @@
 import "../Styles/services.css";
 import UseFetch from "./UseFetch";
+import { Link } from 'react-router-dom'
+import { BsArrowRightCircle } from 'react-icons/bs'
 
 function Services() {
   //Importing the data from useFetch(the custom hook)
@@ -20,36 +22,42 @@ function Services() {
         </div>
       </div>
 
+      {/* Services database section */}
+
       <section className="database">
-        {isPending && <h5>...Loading</h5>}
+        {isPending && <h5>...</h5>}
         {data.map((article) => (
           <article className="preview" key={article.id}>
+            <Link to={`/services/${article.id}`}>
             <img src={article.image} alt="eye" />
             <h3>{article.title}</h3>
             <p>{article.content}</p>
-            <section className="book">               
-              <button className="btn">Book a Consultation</button>
-              <h5>More details</h5>
+            <section className="book">
+              <button className="btn"><Link to='/contact'>Book a Consultation</Link></button>
+              <div className="details">
+                <span><BsArrowRightCircle className="icon" /></span> <h5>More details</h5>
+              </div>
             </section>
+          </Link>
           </article>
         ))}
-      </section>
-
-      {/* Services bottom section */}
-      <aside className="personal-service">
-        <div className="services-img-cont">
-          <img className="services-bottom-image" src="" alt="eye machine" />
-        </div>
-        <div className="explore-content">
-          <h2>providing personal services</h2>
-          <p>Lorem ipsum</p>
-          <div className="explore">
-            <button className="explore-btn">Explore conditions</button>
-          </div>
-        </div>
-      </aside>
-
     </section>
+
+      {/* Services bottom section */ }
+  <aside className="personal-service">
+    <div className="services-img-cont">
+      <img className="services-bottom-image" src="" alt="eye machine" />
+    </div>
+    <div className="explore-content">
+      <h2>providing personal services</h2>
+      <p>Lorem ipsum</p>
+      <div className="explore">
+        <button className="explore-btn">Explore conditions</button>
+      </div>
+    </div>
+  </aside>
+
+    </section >
   );
 }
 

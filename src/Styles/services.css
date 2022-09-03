@@ -1,27 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .database {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    place-content: center;
-    column-gap: 5%;
-    align-items: center;
-    margin: 3% 8%;
+    margin: 2% 10%;
     text-align: justify;
-    padding: 2% 3%;
+    padding: 2% 3% 0% 3%;
     line-height: 1.7;
-    row-gap: 1%;
 }
 
 .preview {
-    padding: 1.1% 1% 5% 1%;
-    border: 0.1px solid #ccebf5;
-    border-radius: 8%;
-    width: 98%;
+    padding: 1% 1% 5% 1%;
+    border: 0.1px solid #def1f7;
+    border-radius: 7%;
+    width: 85%;
+    margin: 8% 0%;
 }
 
 .database img {
@@ -33,27 +24,276 @@
 
 .database h3 {
     margin-top: 2%;
-    margin: 2% 4%;
+    margin: 3% 4%;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 
 .database p {
     width: 90%;
-    height: 230px;
-    margin: 2% 4%;
+    height: 250px;
+    margin: 3% 4%;
+    font-size: 0.87rem
+}
+
+.details {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+}
+
+.icon {
+    color: #02b0eb;
 }
 
 .book {
     display: flex;
     justify-content: space-between;
-    margin: 1% 4%;
+    margin: 1% 5%;
     align-items: center;
 }
 
 .btn {
-    width: 10rem;
+    width: 12rem;
     padding: 10px;
     border-radius: 40px;
     background-color: white;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*==============================================mediaqueries for database section======================================*/
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 10%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+    .database img {
+        width: 100%;
+        object-fit: cover;
+        height: 320px;
+        border-radius: 8%;
+    }
+    .database h3 {
+        margin-top: 2%;
+        margin: 3% 4%;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+    .database p {
+        width: 90%;
+        height: 250px;
+        margin: 4% 4%;
+        font-size: 1.17rem
+    }
+    .details {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        width: 170px;
+        font-size: 1.6rem
+    }
+    .book {
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 5%;
+        align-items: center;
+    }
+    .btn {
+        width: 16rem;
+        padding: 15px;
+        border-radius: 50px;
+        font-size: 1.2rem
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 10%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+    .database img {
+        width: 100%;
+        object-fit: cover;
+        height: 260px;
+        border-radius: 8%;
+    }
+    .database h3 {
+        margin-top: 2%;
+        margin: 3% 4%;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+    .database p {
+        width: 90%;
+        height: 450px;
+        margin: 4% 4%;
+        font-size: 1.25rem
+    }
+    .details {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        width: 170px;
+        font-size: 1.7rem
+    }
+    .book {
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 5%;
+        align-items: center;
+    }
+    .btn {
+        width: 15rem;
+        padding: 15px;
+        border-radius: 50px;
+        font-size: 1.2rem
+    }
+}
+
+@media only screen and (max-width: 599px) and (min-width: 481px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 10%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+    .database img {
+        width: 100%;
+        object-fit: cover;
+        height: 260px;
+        border-radius: 8%;
+    }
+    .database h3 {
+        margin-top: 2%;
+        margin: 3% 4%;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+    .database p {
+        width: 90%;
+        height: 330px;
+        margin: 4% 4%;
+        font-size: 0.95rem
+    }
+    .details {
+        display: flex;
+        justify-content: space-between;
+        width: 130px;
+        font-size: 1.15rem
+    }
+    .book {
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 5%;
+        align-items: center;
+    }
+    .btn {
+        width: 11rem;
+        padding: 11px;
+        border-radius: 40px;
+        font-size: 0.9rem
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 200px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 0%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+    .database img {
+        width: 98%;
+        object-fit: cover;
+        height: 230px;
+        border-radius: 8%;
+    }
+    .database h3 {
+        margin-top: 2%;
+        margin: 3% 4%;
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+    .database p {
+        width: 90%;
+        height: 290px;
+        margin: 4% 4%;
+        font-size: 0.8rem
+    }
+    .details {
+        width: 92px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem
+    }
+    .book {
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 5%;
+        align-items: center;
+    }
+    .btn {
+        width: 10rem;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 0.75rem
+    }
 }
 
 
