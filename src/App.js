@@ -6,7 +6,6 @@ import About from './Components/About';
 import Conditions from './Components/Conditions';
 import Services from './Components/Services';
 import Contact from './Components/Contact';
-import ServiceList from './Components/ServiceList';
 
 function App() {
 
@@ -19,7 +18,6 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/conditions' element={<Conditions />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/:id" element={<ServiceList />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
