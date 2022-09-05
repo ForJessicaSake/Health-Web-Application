@@ -1,94 +1,463 @@
 .database {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    place-content: center;
+    margin: 2% 10%;
+    text-align: justify;
+    padding: 2% 3% 0% 3%;
+    line-height: 1.7;
+}
+
+.preview {
+    padding: 1% 1% 5% 1%;
+    border: 0.1px solid #def1f7;
+    border-radius: 7%;
+    width: 95%;
+    margin: 8% 0%;
 }
 
 .database img {
-    width: 50%;
+    width: 100%;
     object-fit: cover;
+    height: 220px;
+    border-radius: 8%;
+}
+
+.database h3 {
+    margin-top: 2%;
+    margin: 3% 4%;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 
 .database p {
-    width: 50%;
+    width: 90%;
+    height: 250px;
+    margin: 3% 4%;
+    font-size: 0.87rem
+}
+
+.details {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+}
+
+.icon {
+    color: #02b0eb;
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 5%;
+    align-items: center;
+}
+
+.btn {
+    width: 12rem;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: white;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*==============================================mediaqueries for database section======================================*/
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 10%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+    .database img {
+        width: 100%;
+        object-fit: cover;
+        height: 320px;
+        border-radius: 8%;
+    }
+    .database h3 {
+        margin-top: 2%;
+        margin: 3% 4%;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+    .database p {
+        width: 90%;
+        height: 250px;
+        margin: 4% 4%;
+        font-size: 1.17rem
+    }
+    .details {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        width: 170px;
+        font-size: 1.6rem
+    }
+    .book {
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 5%;
+        align-items: center;
+    }
+    .btn {
+        width: 16rem;
+        padding: 15px;
+        border-radius: 50px;
+        font-size: 1.2rem
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 10%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+    .database img {
+        width: 100%;
+        object-fit: cover;
+        height: 260px;
+        border-radius: 8%;
+    }
+    .database h3 {
+        margin-top: 2%;
+        margin: 3% 4%;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+    .database p {
+        width: 90%;
+        height: 450px;
+        margin: 4% 4%;
+        font-size: 1.25rem
+    }
+    .details {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        width: 170px;
+        font-size: 1.7rem
+    }
+    .book {
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 5%;
+        align-items: center;
+    }
+    .btn {
+        width: 15rem;
+        padding: 15px;
+        border-radius: 50px;
+        font-size: 1.2rem
+    }
+}
+
+@media only screen and (max-width: 599px) and (min-width: 481px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 10%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+    .database img {
+        width: 100%;
+        object-fit: cover;
+        height: 260px;
+        border-radius: 8%;
+    }
+    .database h3 {
+        margin-top: 2%;
+        margin: 3% 4%;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+    .database p {
+        width: 90%;
+        height: 330px;
+        margin: 4% 4%;
+        font-size: 0.95rem
+    }
+    .details {
+        display: flex;
+        justify-content: space-between;
+        width: 130px;
+        font-size: 1.15rem
+    }
+    .book {
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 5%;
+        align-items: center;
+    }
+    .btn {
+        width: 11rem;
+        padding: 11px;
+        border-radius: 40px;
+        font-size: 0.9rem
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 200px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 0%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+    .database img {
+        width: 98%;
+        object-fit: cover;
+        height: 230px;
+        border-radius: 8%;
+    }
+    .database h3 {
+        margin-top: 2%;
+        margin: 3% 4%;
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+    .database p {
+        width: 90%;
+        height: 290px;
+        margin: 4% 4%;
+        font-size: 0.8rem
+    }
+    .details {
+        width: 92px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem
+    }
+    .book {
+        display: flex;
+        justify-content: space-between;
+        margin: 1% 5%;
+        align-items: center;
+    }
+    .btn {
+        width: 10rem;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 0.75rem
+    }
+}
+
+section {
+    padding: 2rem 3%;
+}
+
+
+/* Services hero section styling */
+
+.services-hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.services-hero .main-content {
+    max-width: 50rem;
+}
+
+.services-hero .main-content h3 {
+    font-size: 3rem;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services-hero .main-content span {
+    color: #02B0EB;
+    line-height: 1.7;
+}
+
+.services-hero .main-content p {
+    font-size: 1.2rem;
+    color: #333540;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.services-hero .main-content .btn {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #02B0EB;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 0.9rem 3.5rem;
+    cursor: pointer;
+}
+
+.services-hero .main-content .btn:hover {
+    background: none;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.3s linear;
+}
+
+.services-hero .main-content .small-text {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    color: gray
+}
+
+.services-hero .main-content .small-text span {
+    background-color: gray;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.hero-image {
+    width: 600px;
+    height: 100vh;
+    margin-left: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-image {
+        display: none;
+    }
+    .services-hero .main-content h3 {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero-image {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .services-hero {
+        background-position: left;
+    }
 }
 
 
 /* Services bottom section */
-.personal-service{
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    color: black;
-    padding: 3.5rem 1.25rem 3.5rem 1.25rem;
-}
-.services-img-cont {
-    margin-bottom: 2.5rem;
-    width: 80%;
-}
-.services-bottom-image{
-    object-fit: cover;
-    object-position: center;
-    border-radius: 9999px;
-}
 
-.explore-content {
+.personal-services .row {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: .5rem;
 }
 
-.explore-content h2 {
-    font-weight: 500;
-    margin-bottom: 1rem;
+.personal-services .row .image-cont {
+    border-radius: 50%;
+    position: relative;
+    flex: 1 1 40rem;
+}
+
+.personal-services .row .image-cont img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.personal-services .row .ps-content {
+    flex: 1 1 40rem;
+}
+
+.personal-services .row .ps-content h3 {
+    text-transform: uppercase;
     font-size: 1.5rem;
+    color: #1A1A1A;
 }
 
-.explore {
-    display: flex;
-    justify-content: center;
+.personal-services .row .ps-content p {
+    font-size: 1.1rem;
+    color: #1A1A1A;
+    padding: 0.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
 }
 
-.explore-btn {
-    display: inline-flex;
-    font-size: 1.125rem;
-    border-width: 0px;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    border-radius: 0.5rem;
-}
-@media (min-width: 1024px) {  
-   .explore-content{
-      padding-left: 1rem;
-      flex-grow: 1;
-   } 
-   .services-img-cont {
-      width: 100%;
-      max-width: 32rem;
-   }
+.ps-content .ps-btn {
+    display: inline-block;
+    background: none;
+    color: #1A1A1A;
+    margin-top: 1rem;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 0.6rem 3.5rem;
+    cursor: pointer;
+    border: 1px solid #1A1A1A;
 }
 
-@media (min-width: 768px) { 
-  .personal-service {
-    flex-direction: row;
-  }
-
-  .services-img-cont {
-    margin-bottom: 0;
-    width: 50%;
-  }
-
-  .explore-content {
-    padding-left: 4rem;
-    align-items:flex-start;
-    text-align: left;
-    width: 50%;
-  }
-}
-
-@media (min-width: 640px) { 
-    .explore-content h2 {
-        font-size: 1.875rem
-    }
+.ps-content .btn:hover {
+    background-color: #02B0EB;
+    color: white;
+    border: none;
+    outline: none;
+    transition: 0.3s linear;
 }
