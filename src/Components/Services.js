@@ -19,61 +19,62 @@ function Services() {
           <p>Our clinic offers a wide range of private ophthalmologist services.
           </p>
           <Link to="/contact" className="btn">Book a Consultation</Link>
-          <p className="small-text"><span><FaArrowDown className="arrow" /></span> Explore All Services</p>
-        </div>
+          <p className="small-text"><span> <FaArrowDown className="arrow" /></span> Explore All Services</p>
+        </div >
 
-        <div>
-          {/* <img className="hero-image" src={pic} alt="man pointing" /> */}
+
+    <div>
+      {/* <img className="hero-image" src={pic} alt="man pointing" /> */}
+    </div>
+      </div >
+
+    {/* Services database section */ }
+
+    <section className = "database" >
+      { isPending && <h5>...</h5>}
+{
+  data.map((article) => (
+    <article className="preview" key={article.id}>
+      <img src={article.image} alt="eye" />
+      <h3>{article.title}</h3>
+      <p>{article.content}</p>
+      <section className="book">
+        <button className="btn"><Link to='/contact'>Book a Consultation</Link></button>
+        <div className="details">
+          <Link to={`/services/${article.id}`}>
+            <span><BsArrowRightCircle className="icon" /></span> <h5>More details</h5>
+          </Link>
         </div>
+      </section>
+    </article>
+  ))
+}
+      </section >
+
+  {/* Services bottom section */ }
+  <aside className = "personal-services" >
+    <div className="row">
+      <div className="image-cont">
+        {/* <img src={pics} alt="eye machine" /> */}
       </div>
 
-      {/* Services database section */}
+      <div className="ps-content">
+        <h3>providing personal service</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Debitis, provident beatae, repellat asperiores sequi error esse
+          assumenda quibusdam cumque, alias non earum explicabo sit
+          officiis dignissimos architecto accusantium natus dolore nobis.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Debitis, provident beatae, repellat asperiores sequi error esse
+          assumenda quibusdam cumque, alias non earum explicabo sit
+          officiis dignissimos architecto accusantium natus dolore nobis.
+        </p>
+        <Link to="/conditions" className="ps-btn">Explore Conditions</Link>
+      </div>
 
-      <section className="database">
-        {isPending && <h5>...</h5>}
-        {data.map((article) => (
-          <article className="preview" key={article.id}>
-            <img src={article.image} alt="eye" />
-            <h3>{article.title}</h3>
-            <p>{article.content}</p>
-            <section className="book">
-              <button className="btn"><Link to='/contact'>Book a Consultation</Link></button>
-              <div className="details">
-                <Link to = '/contact'>
-                  <span><BsArrowRightCircle className="icon" /></span> <h5>More details</h5>
-                </Link>
-              </div>
-            </section>
-          </article>
-        ))}
-      </section>
-
-      {/* Services bottom section */}
-      <aside className="personal-services">
-        <div className="row">
-
-          <div className="image-cont">
-            {/* <img src={pics} alt="eye machine" /> */}
-          </div>
-
-          <div className="ps-content">
-            <h3>providing personal service</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Debitis, provident beatae, repellat asperiores sequi error esse
-              assumenda quibusdam cumque, alias non earum explicabo sit
-              officiis dignissimos architecto accusantium natus dolore nobis.
-            </p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Debitis, provident beatae, repellat asperiores sequi error esse
-              assumenda quibusdam cumque, alias non earum explicabo sit
-              officiis dignissimos architecto accusantium natus dolore nobis.
-            </p>
-            <Link to="/conditions" className="ps-btn">Explore Conditions</Link>
-          </div>
-
-        </div>
-      </aside>
-
+    </div>
+      </aside >
     </section >
   );
 }
