@@ -1,10 +1,10 @@
 import "../Styles/services.css";
 import UseFetch from "./UseFetch";
-import { useState } from 'react';
+import { Link } from 'react-router-dom'
+import { BsArrowRightCircle } from 'react-icons/bs'
 import { FaArrowDown } from 'react-icons/fa'
-import pic from "../images/pointing_finger.png";
-import pics from "../images/eye machine.jpg";
-
+// import pic from "../images/pointing_finger.png";
+// import pics from "../images/eye machine.jpg";
 
 function Services() {
   //Importing the data from useFetch(the custom hook)
@@ -12,43 +12,48 @@ function Services() {
 
   return (
     <section>
-
       {/* Services hero section */}
       <div className="services-hero">
         <div className="main-content">
-          <h3>services we offer <br/>at <span>focus eye </span></h3>
+          <h3>services we offer <br />at <span>focus eye </span></h3>
           <p>Our clinic offers a wide range of private ophthalmologist services.
           </p>
           <a href="#" className="btn">Book a Consultation</a>
-          <p className="small-text"><span><FaArrowDown className="arrow"/></span> Explore All Services</p>
+          <p className="small-text"><span><FaArrowDown className="arrow" /></span> Explore All Services</p>
         </div>
-
 
         <div>
-          <img className="hero-image" src={pic} alt="man pointing" />
+          {/* <img className="hero-image" src={pic} alt="man pointing" /> */}
         </div>
+      </div>
 
-      </div>   
+      {/* Services database section */}
 
-
-      <article className="database">
-        {isPending && <h5>...Loading</h5>}
+      <section className="database">
+        {isPending && <h5>...</h5>}
         {data.map((article) => (
-          <div className="preview" key={article.id}>
+          <article className="preview" key={article.id}>
             <img src={article.image} alt="eye" />
-            <p>{article.title}</p>
+            <h3>{article.title}</h3>
             <p>{article.content}</p>
-          </div>
+            <section className="book">
+              <button className="btn"><Link to='/contact'>Book a Consultation</Link></button>
+              <div className="details">
+                <Link to={`/services/${article.id}`}>
+                  <span><BsArrowRightCircle className="icon" /></span> <h5>More details</h5>
+                </Link>
+              </div>
+            </section>
+          </article>
         ))}
-      </article>
-
+      </section>
 
       {/* Services bottom section */}
       <aside className="personal-services">
         <div className="row">
 
           <div className="image-cont">
-            <img src={pics} alt="eye machine" />
+            {/* <img src={pics} alt="eye machine" /> */}
           </div>
 
           <div className="ps-content">
@@ -68,7 +73,8 @@ function Services() {
 
         </div>
       </aside>
-    </section>
+
+    </section >
   );
 }
 
