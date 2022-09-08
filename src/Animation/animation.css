@@ -1,0 +1,53 @@
+.database-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2% 10%;
+    text-align: justify;
+    padding: 2% 0% 0% 0%;
+    line-height: 1.7;
+}
+
+.preview-one {
+    padding: 1% 1% 5% 1%;
+    border: 0.1px solid #def1f7;
+    border-radius: 7%;
+    width: 220%;
+    margin: 8% 0%;
+    background-color: #def1f7;
+    animation: skeleton 1s ease infinite alternate;
+}
+
+.post {
+    width: 90%;
+    height: 250px;
+    margin: 3% 4%;
+    font-size: 0.87rem;
+    background-color: #96e1f8;
+    border-radius: 20px;
+}
+
+@keyframes skeleton {
+    to {
+        opacity: 0.5;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .database-post {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 10%;
+        padding: 2% 3% 0% 3%;
+        line-height: 1.7;
+    }
+    .preview-one {
+        border-radius: 7%;
+        width: 100%;
+        margin: 8% 0%;
+    }
+}

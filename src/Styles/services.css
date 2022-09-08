@@ -414,7 +414,7 @@ section {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     padding: 0% 9% 0% 5%;
     text-align: justify;
@@ -426,7 +426,7 @@ section {
 }
 
 .image-cont img {
-    width: 65%;
+    width: 60%;
     height: 80vh;
     border-radius: 45%;
     object-fit: cover;

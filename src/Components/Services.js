@@ -1,5 +1,6 @@
 import "../Styles/services.css";
 import UseFetch from "./UseFetch";
+import Animation from "../Animation/Animation";
 import { Link } from 'react-router-dom'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { FaArrowDown } from 'react-icons/fa'
@@ -31,23 +32,22 @@ function Services() {
       {/* Services database section */}
 
       <section className="database" >
-        {isPending && <h5>...</h5>}
-        {data.map((article) => (
-          <article className="preview" key={article.id}>
-            <img src={article.image} alt="eye" />
-            <h3>{article.title}</h3>
-            <p>{article.content}</p>
-            <section className="book">
-              <Link to='/contact'><button className="btn">Book a Consultation </button></Link>
-              <Link to={`/services/${article.id}`}>
-                <div className="details">
-                  <span><BsArrowRightCircle className="icon" /></span> <h5>More details</h5>
-                </div>
-              </Link>
-
-            </section>
-          </article>
-        ))
+        {isPending ? <Animation type = "feed"/> :
+          data.map((article) => (
+            <article className="preview" key={article.id}>
+              <img src={article.image} alt="eye" />
+              <h3>{article.title}</h3>
+              <p>{article.content}</p>
+              <section className="book">
+                <Link to='/contact'><button className="btn">Book a Consultation </button></Link>
+                <Link to={`/services/${article.id}`}>
+                  <div className="details">
+                    <span><BsArrowRightCircle className="icon" /></span> <h5>More details</h5>
+                  </div>
+                </Link>
+              </section>
+            </article>
+          ))
         }
       </section >
 
@@ -74,7 +74,7 @@ function Services() {
 
       </aside>
 
-    </section>
+    </section >
   );
 }
 
