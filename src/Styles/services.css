@@ -363,7 +363,7 @@ a {
 .small-text {
     font-size: 1.1rem;
     margin-top: 1.5rem;
-    color: gray
+    color: gray;
 }
 
 .small-text span {
@@ -375,6 +375,7 @@ a {
     color: white;
     font-size: 10px;
     padding: 5px;
+    cursor: pointer;
 }
 
 .hero-image {
@@ -391,6 +392,20 @@ a {
     }
     .main-content p {
         font-size: 0.85rem;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-cont {
+        width: 100% !important;
+    }
+    .image-cont img {
+        width: 100% !important;
+        height: 60vh !important;
+    }
+    .ps-content {
+        margin-top: 3rem;
     }
 }
 
@@ -410,11 +425,16 @@ a {
     .services-hero {
         background-position: left;
     }
-    .main-content h3 {
-        font-size: 1.6rem;
+    .row {
+        display: flex;
+        flex-direction: column;
     }
-    .main-content p {
-        font-size: 0.9rem;
+    .image-cont img {
+        width: 100% !important;
+        height: 50vh !important;
+    }
+    .ps-content {
+        margin-top: 4rem;
     }
 }
 
@@ -422,22 +442,16 @@ a {
 /* Services bottom section */
 
 .row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     align-items: center;
-    margin: 0% 9% 0% 9%;
+    padding: 0% 15% 0% 10%;
     text-align: justify;
 }
 
 .image-cont {
-    border-radius: 50%;
-    position: relative;
-}
-
-.image-cont img {
-    width: 60%;
     height: 60vh;
-    border-radius: 45%;
+    width: 80%;
+    height: 80vh;
     object-fit: cover;
 }
 
