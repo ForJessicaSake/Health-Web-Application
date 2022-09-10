@@ -321,7 +321,7 @@ a {
 }
 
 .main-content h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #1A1A1A;
     text-transform: uppercase;
     font-weight: bolder;
@@ -388,10 +388,10 @@ a {
         display: none;
     }
     .main-content h3 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     .main-content p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
     .row {
         display: flex;
@@ -417,7 +417,7 @@ a {
         font-size: 1.8rem;
     }
     .main-content p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -448,11 +448,12 @@ a {
     text-align: justify;
 }
 
-.image-cont {
+.row img {
     height: 60vh;
     width: 80%;
     height: 80vh;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .ps-content {

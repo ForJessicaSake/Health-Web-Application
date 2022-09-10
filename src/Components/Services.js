@@ -4,8 +4,8 @@ import Animation from "../Animation/Animation";
 import { Link } from 'react-router-dom'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { FaArrowDown } from 'react-icons/fa'
-import pic from "../images/pointing_finger.png";
-import pics from "../images/eye machine.jpg";
+import pic from "../Images/pointing_finger.png";
+import pics from "../Images/eye machine.jpg";
 
 function Services() {
   //Importing the data from useFetch(the custom hook)
