@@ -304,12 +304,6 @@ a {
 }
 
 
-/* 
-section {
-    padding: 2rem 3%;
-} */
-
-
 /* Services hero section styling */
 
 .services-hero {
@@ -393,7 +387,10 @@ section {
         display: none;
     }
     .main-content h3 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+    }
+    .main-content p {
+        font-size: 0.85rem;
     }
 }
 
@@ -401,11 +398,23 @@ section {
     .hero-image {
         display: none;
     }
+    .main-content h3 {
+        font-size: 1.8rem;
+    }
+    .main-content p {
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 991px) {
     .services-hero {
         background-position: left;
+    }
+    .main-content h3 {
+        font-size: 1.6rem;
+    }
+    .main-content p {
+        font-size: 0.9rem;
     }
 }
 
@@ -413,10 +422,10 @@ section {
 /* Services bottom section */
 
 .row {
-    display: flex;
-    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 0% 9% 0% 5%;
+    margin: 0% 9% 0% 9%;
     text-align: justify;
 }
 
@@ -427,7 +436,7 @@ section {
 
 .image-cont img {
     width: 60%;
-    height: 80vh;
+    height: 60vh;
     border-radius: 45%;
     object-fit: cover;
 }
@@ -448,6 +457,7 @@ section {
     padding: 0.5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
+    width: 90%;
 }
 
 .ps-btn {
