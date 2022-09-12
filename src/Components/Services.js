@@ -40,7 +40,6 @@ function Services() {
               <p>{article.content}</p>
               <section className="book">
                 <Link to='/contact'><button className="btn">Book a Consultation </button></Link>
-                <Link to={`/services/${article.id}`}>
                   <div className="details">
                     <span><BsArrowRightCircle className="icon" /></span> <h5>More details</h5>
                   </div>
