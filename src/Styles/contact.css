@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap');
+section{
+    width: 100vw;
+    font-family: 'Montserrat';
+}
+.contact-header{
+    max-width: 1140px;
+    margin: 4rem auto;
+    height: 50vh;
+    display: flex;
+
+    
+}
+.contact-header h1{
+    margin-bottom: 5rem;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contact-header h1 span{
+    color: #02b0eb;
+}
+
+.contact-header__image{
+ width: 20rem;
+ height: 20rem;
+ background-color: red;
+ margin-left: 10rem;
+}
+
+.contact-header__info--list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.contact-form{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #02b0eb;
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    margin: 4rem;
+    background-color: #ffffff;
+    padding: 4rem;
+}
