@@ -1,11 +1,11 @@
 import '../Styles/footer.css'
 function Footer() {
     return (
-        <section>
+        <footer>
 
             <h1> This is the Footer section</h1>
 
-        </section>
+        </footer>
     )
 }
 
