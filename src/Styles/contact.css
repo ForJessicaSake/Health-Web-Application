@@ -1,3 +1,5 @@
+
+
 .contact-header {
     max-width: 1140px;
     margin: 4rem auto;
@@ -26,7 +28,7 @@
 .contact-header__info--list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(2, 15rem);
+    grid-template-columns: repeat(2, 20rem);
     grid-template-rows: auto auto;
     gap: 2rem;
     font-size: 1rem;
