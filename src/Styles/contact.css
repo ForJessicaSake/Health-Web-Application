@@ -1,3 +1,77 @@
+@media only screen and (max-width:767px) {
+  
+
+.contact-header{
+  display: none;
+}
+.contact-form{
+  height: 100vh;
+  margin: 2rem;
+}
+.form{
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2.5px solid #02b0eb;
+  border-radius: 2rem;
+}
+.form-header{
+  margin-top: 1rem;
+  margin-bottom: 3.8rem;
+}
+.form-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.form input, form select{
+  display: inline-block;
+  margin-bottom: 2rem;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: 0.2px solid #ccc ;
+  width: 100%;
+ 
+}
+.form-info input[placeholder] {
+  text-align: center;
+}
+.form-info select{
+  text-align: center;
+  
+}
+.form label{
+  display:block;
+  margin-bottom: 1rem;
+}
+.form-button .button {
+  background-color: #02b0eb;
+  display: block;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 8rem;
+  text-decoration: none;
+  border-color: transparent;
+  
+}
+.form-button{
+  margin: 1rem auto;
+}
+.form-button__checkbox{
+  display: none;
+}
+.form-top-button .top{
+  display: none;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
 section{
   padding: 0;
   margin: 0;
@@ -159,4 +233,5 @@ section{
 .form-top-button .bottom-button{
   background-color: #333540;
   color: #ffffff;
+}
 }
