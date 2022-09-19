@@ -97,16 +97,20 @@ section{
   justify-content: space-between;
 }
 
-.form input {
+.form input, .form select {
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
-  border-bottom-style: 0.8px solid #ccc;
+  border-bottom-style: 0.2px solid #ccc ;
   margin-left: 4px;
   flex-grow: 2;
 }
 .form-info input[placeholder] {
   text-align: center;
+}
+.form-info select{
+  text-align: center;
+  
 }
 .form-button {
   display: flex;
@@ -126,5 +130,33 @@ section{
   text-align: center;
   border-radius: 10rem;
   text-decoration: none;
+  border-color: transparent;
+}
+.form-top-button{
+ display: inline-block;
+ position: relative;
+ bottom: 25rem;
+ left: 72rem;
+}
+.form-top-button .top{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-top-button button{
+  padding: 0.5rem 1.1rem;
+  text-align: center;
+  border-radius: 10rem ;
+  text-decoration: none;
+
 }
 
+.form-top-button .top-button{
+  background-color: #f3f4f0;
+  border-bottom-right-radius: 0;
+  color: #000;
+}
+.form-top-button .bottom-button{
+  background-color: #333540;
+  color: #ffffff;
+}
