@@ -4,6 +4,7 @@ import UseFetch from './UseFetch';
 function Home() {
     //Importing the data from useFetch(the custom hook)
     const { data, isPending } = UseFetch("Home")
+    console.log(data)
 
     return (
         <section>
