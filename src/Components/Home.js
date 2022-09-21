@@ -1,14 +1,16 @@
 import '../Styles/home.css'
 import UseFetch from './UseFetch';
+import Hero from './Hero';
+import Team from './Team';
 
 function Home() {
     //Importing the data from useFetch(the custom hook)
     const { data, isPending } = UseFetch("Home")
-    console.log(data)
 
     return (
         <section>
-            <h1> This is the Home section</h1>
+            <Hero />
+            <Team />
             {/* this is how to map through the data from the collection home */}
             {/* 
          {isPending && <h5>...Loading</h5>}
