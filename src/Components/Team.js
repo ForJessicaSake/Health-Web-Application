@@ -8,7 +8,7 @@ const Team = () => {
                     <img src={EyeMachine} alt="eye machine" />
                 </div>
                 <div className="side-img">
-                    <p><span><span className="digit">14 </span> years</span><br /> of experience</p>
+                    <p><span><span className="digit">14</span> years</span><br /> of experience</p>
                 </div>
             </div>
             <div className="right">
