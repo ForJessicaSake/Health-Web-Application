@@ -5,13 +5,14 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import Hero from './Hero';
 import Team from './Team';
+import Footer from './Footer';
 
 function Home() {
     //Importing the data from useFetch(the custom hook)
     const { data, isPending } = UseFetch("Home")
 
     return (
-        <section>
+        <section className="home">
             <Hero />
             <Team />
             {/* this is how to map through the data from the collection home */}
@@ -45,6 +46,8 @@ function Home() {
                     </section>
                 </div>
             </section>
+
+            <Footer />
         </section>
     )
 }

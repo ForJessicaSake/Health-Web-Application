@@ -1,4 +1,8 @@
 /* HERO */
+.home {
+    width: 100vw;
+    overflow-x: hidden;
+}
 .home-hero {
     position: relative;
     width: 100vw;
@@ -197,7 +201,6 @@
     background-color: #1A1A1A;
     color: #f7f7f7;
 }
-
 
 
 @media only screen and (max-width: 1048px) and (min-width: 832px){
