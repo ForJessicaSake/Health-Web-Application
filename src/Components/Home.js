@@ -3,14 +3,18 @@ import UseFetch from './UseFetch';
 import nurse from '../images/nurse.png'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import Hero from './Hero';
+import Team from './Team';
+import Footer from './Footer';
 
 function Home() {
     //Importing the data from useFetch(the custom hook)
     const { data, isPending } = UseFetch("Home")
 
     return (
-        <section>
-            <h1> This is the Home section</h1>
+        <section className="home">
+            <Hero />
+            <Team />
             {/* this is how to map through the data from the collection home */}
 
             <section className="homeDatabase">
@@ -42,6 +46,8 @@ function Home() {
                     </section>
                 </div>
             </section>
+
+            <Footer />
         </section>
     )
 }
