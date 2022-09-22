@@ -72,6 +72,11 @@
 .explore {
     display: inline;
     font-size: 14px;
+    cursor: pointer;
+}
+.explore:hover {
+    font-weight: bolder;
+    transition: 0.3s linear;
 }
 .explore span {
     background-color: #333540;
@@ -107,6 +112,10 @@
     cursor: pointer;
     font-weight: bolder;
     text-align: center;
+}
+.contact-links > *:hover, .social-links span:hover {
+    transform: scale(1.05);
+    transition: 0.3s linear;
 }
 .contact-links > * span {
     margin-top: -2px;
