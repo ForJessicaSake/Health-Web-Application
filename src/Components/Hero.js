@@ -1,4 +1,4 @@
-import { FaArrowDown, FaUser, FaFacebookMessenger, FaFacebookF } from "react-icons/fa"
+import { FaArrowDown, FaUser, FaFacebookMessenger, FaFacebookF, FaTwitter } from "react-icons/fa"
 import HeroImg from "../images/hero.png"
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
             <div className="side">
                 <div className="social-links">
                     <span><FaFacebookF /></span>
-                    <span><FaFacebookF /></span>
+                    <span><FaTwitter /></span>
                 </div>
                 <div className="contact-links">
                     <a href="#" className="chat"><span><FaFacebookMessenger /></span> Let's Chat!</a>
