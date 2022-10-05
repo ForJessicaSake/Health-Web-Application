@@ -2,7 +2,7 @@ import '../Styles/about.css'
 function About() {
   return (
     <section>
-      <h1> This is the About section</h1>
+        <p style={{padding: "10% 10%"}}>About page</p>
     </section>
   );
 }
