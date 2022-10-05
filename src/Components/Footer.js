@@ -24,7 +24,6 @@ function Footer() {
                 </ul>
                 <div className='socials'>
                     <span><FaFacebookF /></span>
-                    <span><FaFacebookF /></span>
                 </div>
             </div>
             <div className="buttons">
