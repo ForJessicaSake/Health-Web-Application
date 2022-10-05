@@ -1,0 +1,142 @@
+
+
+.navbar{
+  padding: 3% 10% 2% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo{
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.navbar .links{
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+
+.navbar .links li{
+  color: rgb(65, 65, 65);
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
+
+.navbar-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: cornflowerblue;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar-link:hover::after {
+  width: 50%;
+}
+
+#active::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: cornflowerblue;
+  display: block;
+  margin: auto;
+}
+
+.navbar .toggle-icon{
+  display: none
+}
+
+.navbar .menu-close {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media(max-width: 900px){
+  .App{
+    width: 100%;
+  }
+  .navbar{
+    position: relative;
+    height: 80px;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .navbar.expanded{
+    height: 100vh;
+    background-color: #01061D;
+  }
+.navbar.expanded a{
+    color: white
+}
+  .navbar.expanded .links{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .navbar.expanded .links li{
+    margin: 15px 0;
+    font-size: 24px;
+  }
+
+  .navbar .links li{
+    color: rgb(238, 234, 234);
+
+  }
+
+  .navbar .logo{
+    position: absolute;
+    top: 23px;
+    left: 40px;
+    font-size: 1.6rem;
+  }
+
+  .navbar .toggle-icon{
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    color: cornflowerblue;
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+    padding: 2px 7px;
+  }
+
+  .navbar .links{
+    position: absolute;
+    top: -300px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar .links li{
+    margin: 15px 0;
+    font-size: 24px;
+  }
+  
+}
+#top {
+  height: 100vh;
+}
+
+
+
+

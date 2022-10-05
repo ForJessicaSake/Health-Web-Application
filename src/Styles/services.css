@@ -54,15 +54,22 @@
     align-items: center;
 }
 
-.btn {
-    width: 12rem;
-    padding: 10px;
-    border-radius: 40px;
-    background-color: white;
-    font-weight: bold;
-}
 
-.btn:hover {
+.sbtn {
+    background-image: radial-gradient(at top left, rgba(2, 176, 235, 0.09) 67%, transparent 55.5%),
+    linear-gradient(90deg, #3046c21a 0%, rgba(2, 176, 235, 0.1) 100%);
+    background-size: 100%;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px 0;
+    transition: 0.35s ease;
+  }
+    
+
+.sbtn:hover {
     background-color: #02b0eb;
     color: white;
     transition: 0.3s linear;

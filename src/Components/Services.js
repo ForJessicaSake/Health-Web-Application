@@ -19,7 +19,7 @@ function Services() {
           <h3>services we offer <br />at <span>focus eye </span></h3>
           <p>Our clinic offers a wide range of private ophthalmologist services.
           </p>
-          <Link to="/contact" className="btn">Book a Consultation</Link>
+          <Link to="/contact" className="sbtn">Book a Consultation</Link>
           <p className="small-text"><span> <FaArrowDown className="arrow" /></span> Explore All Services</p>
         </div >
 
@@ -39,7 +39,7 @@ function Services() {
               <h3>{article.title}</h3>
               <p>{article.content}</p>
               <section className="book">
-                <Link to='/contact'><button className="btn">Book a Consultation </button></Link>
+                <Link to='/contact'><button className="sbtn">Book a Consultation </button></Link>
                   <div className="details">
                     <span><BsArrowRightCircle className="icon" /></span> <h5>More details</h5>
                   </div>

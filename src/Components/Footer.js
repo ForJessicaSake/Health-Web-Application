@@ -28,7 +28,7 @@ function Footer() {
                 </div>
             </div>
             <div className="buttons">
-                <a href="#" className="footer-btn">Book Online</a>
+                <a href="/" className="footer-btn">Book Online</a>
                 <span className="arrow-up"><FaArrowUp /></span>
                 <span className='mobile-user'><FaUser /></span>
             </div>
