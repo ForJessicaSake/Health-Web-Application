@@ -17,12 +17,15 @@
   list-style: none;
   display: flex;
   cursor: pointer;
+  font-weight: lighter;
 }
 
 .navbar .links li{
   color: rgb(65, 65, 65);
   margin: 0 25px;
   font-size: 1.2rem;
+  font-weight: lighter;
+
 }
 
 .navbar-link::after {

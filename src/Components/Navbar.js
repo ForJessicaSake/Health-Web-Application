@@ -9,6 +9,7 @@ const Navbar = () => {
 
   const handleToggle=()=>{
     setToggle(!toggle);
+    alert('toggle worked')
   }
   const handleLink = ()=>{
     setToggle(false)
@@ -18,16 +19,17 @@ const Navbar = () => {
 
     <nav className={toggle? 'navbar expanded':'navbar'}>
         <h2 className='logo'>FOCUS</h2>
+
         <div className='toggle-icon' onClick={handleToggle} >
-          {toggle ?<p className="menu-close">X</p>:<FaBars style={{fontSize:"2rem"}} />}
+          {toggle ? <p className="menu-close">X</p>:<FaBars style={{fontSize:"2rem"}} />}
         </div>
+        
         <ul className='links' onClick={handleLink}>
           <li id="active"><Link to ='/'>Home</Link></li>
           <li className="navbar-link"><Link to ='/about'>About</Link></li>
           <li className="navbar-link"><Link to ='/conditions'>Conditions</Link></li>
           <li className="navbar-link"><Link to ='/services'>Services</Link></li>
           <li className="navbar-link"><Link to ='/contact'>Contact</Link></li>
-
         </ul>
     </nav>
 
