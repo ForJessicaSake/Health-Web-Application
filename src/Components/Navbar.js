@@ -9,8 +9,6 @@ const Navbar = () => {
 
   const handleToggle=()=>{
     setToggle(!toggle);
-    alert('toggle is working')
-    console.log("toggled")
   }
   const handleLink = ()=>{
     setToggle(false)

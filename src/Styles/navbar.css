@@ -43,7 +43,7 @@
   content: "";
   width: 50%;
   height: 2px;
-  background: cornflowerblue;
+  background: #02b0eb;
   display: block;
   margin: auto;
 }
@@ -53,7 +53,7 @@
 }
 
 .navbar .menu-close {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -108,9 +108,8 @@
     position: absolute;
     top: 28px;
     right: 20px;
-    color: cornflowerblue;
+    color: #02b0eb;
     border-radius: 5px;
-    border: 2px solid cornflowerblue;
     padding: 2px 7px;
   }
 
