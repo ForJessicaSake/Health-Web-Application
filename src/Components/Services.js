@@ -6,6 +6,7 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 import { FaArrowDown } from 'react-icons/fa'
 import pic from "../images/pointing_finger.png";
 import pics from "../images/eye machine.jpg";
+import Footer from "./Footer";
 
 function Services() {
   //Importing the data from useFetch(the custom hook)
@@ -69,9 +70,7 @@ function Services() {
             <Link to="/conditions" className="ps-btn">Explore Conditions</Link>
           </article>
         </section>
-
       </aside>
-
     </section >
   );
 }

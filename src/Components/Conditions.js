@@ -4,12 +4,11 @@ import { BsArrowDownCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 function Conditions() {
   //Importing the data from useFetch(the custom hook)
-  const { data, isPending } = UseFetch("Services");
+  const { data } = UseFetch("Services");
 
   return (
     <section className="conditions">
       <section className="conditions-data">
-        {isPending && <h5>...Loading</h5>}
         <div className="circle"></div>
         {data.map((article) => (
           <div className="conditions-list" key={article.id}>

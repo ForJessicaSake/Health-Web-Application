@@ -6,6 +6,7 @@ import About from './Components/About';
 import Conditions from './Components/Conditions';
 import Services from './Components/Services';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
+        <Footer/>
       </Router>
     </section>
   );
