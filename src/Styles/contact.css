@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 2.5px solid #02b0eb;
+  border: 2px solid #def1f7;
   border-radius: 2rem;
 }
 .form-header{
@@ -78,7 +78,7 @@ section{
   box-sizing: border-box;
 }
 .contact-header {
-  max-width: 1140px;
+  
   margin: 4rem auto;
   height: 50vh;
   display: flex;
@@ -98,14 +98,15 @@ section{
 .contact-header__image {
   width: 20rem;
   height: 20rem;
-  margin-left: 10rem;
 }
 
 .contact-header__image img {
   width: 150%;
-  transform: translateX(-15rem);
+  transform: translateX(-5rem);
 }
-
+.contact-header__info{
+  margin-left: 3rem;
+}
 .contact-header__info--list {
   list-style: none;
   display: grid;
@@ -135,18 +136,18 @@ section{
   padding-top: 4rem;
   padding-bottom: 4rem;
   border-top-left-radius: -20px;
-  background-color: #02b0eb;
+  background: linear-gradient(
+    90deg,
+    rgba(51, 53, 64, 0.1) 0%,
+    rgba(2, 176, 235, 0.1) 100%
+  );
+  border: none;
 
-  /* background: linear-gradient(
-    to top,
-    #02b0eb,
-    #3dffff,
-    #02b0eb
-  ) 50px 0;
-  background:
-    radial-gradient(ellipse at top left, transparent 7%, #02b0eb 50%, 
-    transparent 50%, #02b0eb 100%, transparent 100%);
-  */
+  /* ========For the 2-tone effect======= */
+  background-image: radial-gradient(at top left, rgba(2, 176, 235, 0.09) 67%, transparent 67.5%),
+  linear-gradient(90deg, #3335401a 0%, rgba(2, 176, 235, 0.1) 100%);
+  background-size: 109% 55%, cover;
+  background-repeat: no-repeat;
 }
 
 .form {
@@ -205,6 +206,12 @@ section{
   border-radius: 10rem;
   text-decoration: none;
   border-color: transparent;
+}
+.form-button .button:hover {
+  background-color: white;
+  color: #333540;
+  transition: 0.3s linear;
+  border: 1px solid #1A1A1A;
 }
 .form-top-button{
  display: inline-block;
